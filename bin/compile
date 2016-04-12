@@ -90,7 +90,7 @@ if [ ! -f $ARCHIVE_DIR/$DMD_ARCHIVE.zip ]; then
     echo
     echo "-----> Downloading DMD"
     rm -f dmd*.zip
-    curl $DMD_ARCHIVE_PATH/$DMD_ARCHIVE.zip -o $DMD_ARCHIVE.zip | indent
+    curl $DMD_ARCHIVE_PATH/$DMD_ARCHIVE.linux.zip -o $DMD_ARCHIVE.zip | indent
 fi
 if [ ! -f $ARCHIVE_DIR/$DUB_ARCHIVE.tar.gz ]; then
     echo
