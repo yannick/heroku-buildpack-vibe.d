@@ -137,7 +137,7 @@ fi
 cd $BUILD_DIR
 echo
 echo "Running dub build" | indent
-if dub build --combined 2>&1; then
+if dub build 2>&1; then
     echo
     echo "Build was successful" | indent
     status=0
@@ -147,6 +147,12 @@ else
     status=1
 fi
 
+echo "build dir:"
+ls -lah
+find .
+echo "tool dir:"
+ls -lah "$TOOL_DIR"
+find .
 # clean up any remaining sources
 rm -rf "$TOOL_DIR" source src views
 
