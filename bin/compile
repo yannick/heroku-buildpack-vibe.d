@@ -136,6 +136,9 @@ fi
 # run dub build
 cd $BUILD_DIR
 echo
+ls
+dub build 2>&1
+ls
 echo "Running dub build" | indent
 if dub build 2>&1; then
     echo
