@@ -3,5 +3,7 @@
   "dependencies": {
     "vibe-d": ">=0.7.27"
   },
-  "lflags": ["-L/app/opt/lib"]
+  "lflags": ["-L/app/opt/lib"],
+  "subConfigurations": { "vibe-d": "libasync" },
+        "versions": ["VibeDefaultMain"]
 }
