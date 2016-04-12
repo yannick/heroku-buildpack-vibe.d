@@ -24,6 +24,10 @@ indent() {
     sed -u 's/^/       /'
 }
 
+pwd
+cat /proc/cpuinfo
+cat /proc/meminfo
+df -h
 
 LIBEVENT_ARCHIVE_PATH=https://github.com/libevent/libevent/releases/download
 LIBEVENT_VERSION=2.0.22
